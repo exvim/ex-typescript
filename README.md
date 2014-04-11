@@ -38,3 +38,8 @@ autocmd QuickFixCmdPost    l* nested lwindow
 ```
 
 ![Obligatory screenshot](https://raw.github.com/leafgarland/typescript-vim/master/vimshot01.png)
+
+My Changes
+-----------------
+
+- Disable the fold function of typescript in syntax/typescript.vim

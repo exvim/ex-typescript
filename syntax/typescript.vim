@@ -195,16 +195,18 @@ syn match	typeScriptOpSymbols "=\{1,3}\|!==\|!=\|<\|>\|>=\|<=\|++\|+=\|--\|-="
 syn match typeScriptEndColons "[;,]"
 syn match typeScriptLogicSymbols "\(&&\)\|\(||\)"
 
+" jwu DISABLE: fold, this will cause edit several .ts files the foldlevel
+"              becomes 1
 " typeScriptFold Function {{{
 
-function! TypeScriptFold()
-setl foldlevelstart=1
-syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+" function! TypeScriptFold()
+" setl foldlevelstart=1
+" syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 
-setl foldtext=FoldText()
-endfunction
+" setl foldtext=FoldText()
+" endfunction
 
-au FileType typeScript call TypeScriptFold()
+" au FileType typeScript call TypeScriptFold()
 
 " }}}
 
